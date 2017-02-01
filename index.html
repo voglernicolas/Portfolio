@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- Required meta tags -->
+
     <meta charset="utf-8">
     <!--Responsive meta tag-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,120 +14,90 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="portf.css">
 
-    <title></title>
+    <title>Página ejemplo Portfolio</title>
   </head>
   <body>
 
-    <header>
-
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Brand</a>
-          </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-              <li><a href="#">Link</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form class="navbar-form navbar-left">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
-              </div>
-              <button type="submit" class="btn btn-default">Submit</button>
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Link</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav>
-
-      <button data-toggle="collapse" data-target="#demo">Collapsible</button>
-
-      <div id="demo" class="collapse">
-      Lorem ipsum dolor text....
-      </div>
-
-      <div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
-  <span class="caret"></span></button>
-  <ul class="dropdown-menu">
-    <li><a href="#">HTML</a></li>
-    <li><a href="#">CSS</a></li>
-    <li><a href="#">JavaScript</a></li>
-  </ul>
-</div>
-
-
-
-    <!--
-      <div class="navbar navbar-default">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" name="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a href="" class="navbar-brand">Wiredwiki</a>
-          </div>
-          <div class="collpase navbar-collapse" id="example">
-            <ul class="nav navbar-nav">
-              <li><a href="">Link</a></li>
-              <li><a href="">Link</a></li>
-            </ul>
-
-          </div>
-        </div>
-
-      </div>
-      <div class="jumbotron">
-        <div class="container">
-          <h1>hello world</h1>
-          <h3>navbar in bootstrap</h3>
-        </div>
-
+    <header class="navbar navbar-default navbar-fixed-top" id="banner">
+      <div class="container"><a class="scrollable" href="#top"><img src="http://freepages.genealogy.rootsweb.ancestry.com/~vogler/vogler1b.gif"/></a>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        <nav class="collapse navbar-collapse" id="navbar" role="navigation">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="scrollable" href="#top">About</a></li>
+            <li><a class="scrollable" href="#portfolio">Portfolio</a></li>
+            <li><a class="scrollable" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
--->
+    <!-- end header--><a id="top" name="home"></a>
+    <main>
+      <header>
+        <div class="intro-text">
+          <p>Descripción inicial sobre mi.</p>
+          <hr class="star-bright"/>
+        </div><img src="https://fb-s-b-a.akamaihd.net/h-ak-xpt1/v/t1.0-9/10525376_162088534151826_647134516046982914_n.jpg?oh=5144e6305076e5425957f858ebe148b0&oe=59480AF4&__gda__=1494073160_395aa5122528901101d00f640d661349" alt="" title=""/>
+      </header>
+      <!-- Gallery Grid Section-->
+      <section id="portfolio">
+        <h2>Portfolio</h2>
+        <hr class="star-dark"/>
+        <ul class="grid">
 
+        </ul>
+      </section>
+      <!-- Contact Section-->
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <hr class="star-dark"/>
+        <div>
+          <form id="contactForm" novalidate="">
+            <div class="form-item">
+              <label for="“name”">Name</label>
+              <input id="name" type="text" placeholder="Name" required=""/>
+            </div>
+            <div class="form-item">
+              <label for="“email”">Email Address</label>
+              <input id="email" type="email" placeholder="Email Address" required=""/>
+            </div>
+            <div class="form-item">
+              <label for="“phone”">Phone Number</label>
+              <input id="phone" type="tel" placeholder="Phone Number" required=""/>
+            </div>
+            <div class="form-item">
+              <label for="“message”">Message</label>
+              <textarea id="message" rows="5" placeholder="Message" required=""></textarea>
+            </div><br/>
+            <button type="submit">Send</button>
+          </form>
+          <div>
+            <p>Descripción de campo de texto, razón de email.</p>
+          </div>
+        </div>
+      </section>
+      <!-- Scroll to Top Button (Only supposed to be visible on small and small screen sizes)-->
+      <div class="scroll-top"><a class="button scrollable" href="#top"><i class="fa fa-chevron-up"></i></a></div>
+    </main>
+    <!-- Footer-->
+    <footer>
+      <div id="footer-above">
 
+        <div>
+          <h3>Social media</h3>
+          <ul>
 
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+            <li><a class="button social" href="https://github.com/voglernicolas"><i class="fa fa-fw fa-github"></i></a></li>
+            <li><a class="button social" href="https://twitter.com/Vogler_Nicolas"><i class="fa fa-fw fa-twitter"></i></a></li>
+            <li><a class="button social" href="https://www.facebook.com/nicolasvogler0" title="My Flickr"><i class="fa fa-fw fa-facebook"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
   </body>
 </html>
