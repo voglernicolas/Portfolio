@@ -5,96 +5,110 @@ body{
   background:#888;
   font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size:20px;
-}
+  }
 h2,h3{
   color:#888;
   font-weight:bold;
   text-align:center;
   text-transform:uppercase;
-}
-a{
-  color:#722872;
-}
-a:hover,a:focus{color:#592059;
-}
+  }
+
 #banner .container,
 main header,
-#portfolio .grid,
 #contact>div,
 footer #footer-above{
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  -ms-flex-flow:row wrap;
-      flex-flow:row wrap;
-  -ms-flex-pack:distribute;
-      justify-content:space-around;
-  -webkit-box-align:start;
-      -ms-flex-align:start;
-          align-items:flex-start;
-  margin:0 auto;
-}
+  display:flex; /*Con esto puedo poner elementos al lado del otro*/
+  justify-content:space-around; /*Da un espacio entre los elementos, space between da mas espacio */
+  margin:auto; /*Este margen afecta al footer visualmente, lo deja en el medio*/
+  }
+
 #banner{
-  background-color:#722872 !important;
-  height:80px;
-  box-shadow:0px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  border-color:#592059;
-}
-#banner .container{width:95%;max-width:1024px;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;
-}
-#banner .container::before, #banner .container::after{display:none
-}
-#banner img{height:50px;margin:15px 0;
-}
+  box-shadow:0px 2px 2px 1px rgba(0, 0, 0, 0.1); /*ligero sombreado*/
+  }
+#banner .container{
+  width:95%;  /*alarge de elementos del nav*/
+  max-width:1024px;
+  justify-content:space-between; /*Espacio entre elementos*/
+  align-items:center; /*Alineación de items para centrar en medio del espaciado vertical*/
+  }
+#banner .container::before, #banner .container::after{
+  display:none;      /* ::before: Inserta antes del contenido, ::after:Inserta despues del contenido. En este caso es el display:none:
+  quita el elemento definitivamente. El espacio que ocupaba, según sea el caso, es ocupado por los elementos adyacentes como si el elemento ya no existiera.*/
+  }
+#banner img{
+  height:50px; /*tamaño de la imagen*/
+  margin:15px 0; /*Causa que el navbar se expanda por el margen que da verticalmente*/
+  }
 
 #top{
   height:80px;
   display:block;
-}
-main >*:not(.scroll-top){max-width:1024px;margin:0 auto;box-shadow:0px 0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-main header{background:#aaa;color:#fff;text-align:right;padding:70px 10% 50px;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end;-ms-flex-line-pack:distribute;align-content:space-around;
-}
+  }
+main >*:not(.scroll-top){   /*Parte de script, sacar esto me saca los bordes*/
+  max-width:1024px;   /*Darle un ancho, sacar esto hace que ocupe todo el ancho disponible*/
+  margin:0 auto; /*Alinea el margen del ancho*/
+  box-shadow:0px 0px 2px 1px rgba(0, 0, 0, 0.2);  /*Sombras del costado del main*/
+  }
+main header{
+  background:#aaa;  /*Color fondo, gris un poco mas claro*/
+  color:#fff;  /*Color letra*/
+  text-align:right;
+  align-items:flex-end; /*Posiciona al final los items*/
+  /*align-content:space-around; Probar despues de contenido*/
+  }
+@media(min-width:1023px){  /*Al estar en el min de ancho, entra esta linea Query*/
+  main header{
+    padding:57px 30px;
+    }
+  }
+main header img{
+  border-radius:50%;
+  margin:30px 0 10px;
+  max-width:80%;
+  height:auto;width:250px;
+  }
+main header .intro-text{
+  max-width:675px;
+  text-align:center;
+  margin-bottom:30px;
+  }
+@media(min-width:1023px){   /*Al estar en el min de ancho, entra esta linea Query*/
+  main header .intro-text{
+    text-align:right;
+    width:610px;
+    }
+  }
+main header .intro-text .skills{
+  font-size:1.15em;
+  }
+
+main section{
+  background:#eee;
+  padding:40px 0;
+  }
+main section#contact>div{
+  margin:0px auto;
+  }
+main section#contact>div>div{
+  width:80%;
+  }
+main section#contact>div>div p{
+  margin:60px auto 0;
+  max-width:700px;
+  }
+
 @media(min-width:1023px){
-  main header{padding:50px 30px;
+  main section#contact>div>div{
+    max-width:38%;
+    }
+  main section#contact>div>div p{
+    margin-top:35px;
+    }
+  main section#contact>div>div p:last-child{
+    margin-top:270px;
+    }
   }
-}
-main header img{border-radius:50%;margin:30px 0 10px;max-width:80%;height:auto;width:250px;
-}
-main header .intro-text{max-width:675px;text-align:center;margin-bottom:30px;
-}
-@media(min-width:1023px){
-  main header .intro-text{text-align:right;width:610px;
-  }
-}
-main header .intro-text .skills{font-size:1.15em;
-}
-main section{background:#eee;padding:40px 0;
-}
-main section#contact>div{margin:0px auto;
-}
-main section#contact>div>div{width:80%;
-}
-main section#contact>div>div p{margin:60px auto 0;max-width:700px;
-}
-@media(min-width:1023px){
-  main section#contact>div>div{max-width:38%;
-  }
-  main section#contact>div>div p{margin-top:35px;
-  }
-  main section#contact>div>div p:last-child{margin-top:270px;
-  }
-}
-#portfolio .grid{padding:0;max-width:90%;list-style:none;margin-top:20px;
-}
-#portfolio .grid li{margin:20px;max-width:600px;
-}
-@media(min-width:1023px){
-  #portfolio .grid li{max-width:420px;
-  }
-}
-#portfolio img{max-width:100%;height:auto;display:block;
-}
+
 form{
   width:80%;
 }
@@ -104,7 +118,10 @@ form{
 }
 form .row:first-child .form-item{border-top:1px solid #fff;
 }
-.form-item{position:relative;margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #bbb;
+.form-item{
+  margin-bottom:5px;
+  padding-bottom:10px;
+  border-bottom:1px solid #bbb; /*Da el efecto de subrayado al borde del boton en la parte de abajo*/
 }
 .form-item input, .form-item textarea{z-index:1;position:relative;padding-right:0;padding-left:0;border:0;border-radius:0;font-size:1.5em;background:0 0;box-shadow:none!important;resize:none;width:100%;
 }
