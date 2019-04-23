@@ -36,8 +36,8 @@ footer #footer-above{
   quita el elemento definitivamente. El espacio que ocupaba, según sea el caso, es ocupado por los elementos adyacentes como si el elemento ya no existiera.*/
   }
 #banner img{
-  height:50px; /*tamaño de la imagen*/
-  margin:15px 0; /*Causa que el navbar se expanda por el margen que da verticalmente*/
+  height:50px;
+  margin:15px 0; 
   }
 
 #top{
